@@ -5,8 +5,14 @@ volumes:
 services:
   db:
     image: postgres
+<<<<<<< HEAD
     volumes:
       - postgres_data:/var/lib/postgresql/data
+||||||| parent of e26d456 (Add article scaffold with debugger in articles#index)
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+=======
+>>>>>>> e26d456 (Add article scaffold with debugger in articles#index)
     environment:
       POSTGRES_PASSWORD: password
   web:
