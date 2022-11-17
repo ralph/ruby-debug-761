@@ -12,7 +12,7 @@ services:
   web:
     tty: true
     build: .
-    command: bundle exec rdbg --open --nonstop -c -- rails s -p 3000 -b '0.0.0.0'
+    command: rdbg --open --nonstop -c -- bin/rails s -p 3000 -b '0.0.0.0'
     volumes:
       - .:/myapp
     ports:
